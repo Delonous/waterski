@@ -31,6 +31,7 @@ body {
 
 #title {
     margin-top: 30px;
+    min-height: 70px;
 }
 
 .va {
@@ -58,13 +59,10 @@ nav a {
     cursor: pointer;
 }
 
-#spartyhead1 {
+#twit1, #twit2, #fb1, #fb2, #insta1, #insta2 {
     display: none;
 }
 
-#spartyhead2 {
-    display: none;
-}
 
 .router {
     -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */

@@ -21,32 +21,32 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
+
 </head>
-<body>
+<body onload="size()" onresize="size()">
     <div class="container">
 
         <div class="row">
-          <div *ngIf="!min" class="col-xs-2">
+          <div id="spartyhead1" class="col-xs-2">
             <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
           </div>
           <div class="col-xs-12 col-md-8">
             <h1 class="text-xs-center" id="title">Michigan State Water Ski Club</h1>
           </div>
-          <div *ngIf="!min" class="col-xs-2">
+          <div id="spartyhead2" class="col-xs-2">
             <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
           </div>
         </div>
 
         <nav class="navbar navbar-light bg-faded my-2">
         <img src="https://jamqgw-bn1306.files.1drv.com/y3mrfBHVU7bRAOBkxN_ycRLlfBSHCknFyqsRmeHKdVs_mSUMgqrl8QImTXNPrHW9CGSp1DyUmJnRvuqBIFKPLTO4uEZZ77SopI5ea9NwQ2UqiF5cvLYvXPNJMULAa0d4mezVNZD6LnkFS4C0GUov6cwp4tIdSoWPCQsIOlExx_PBpM?width=218&height=154&cropmode=none" class="hidden-md-up img-fluid" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" width="50px">
-        <a class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
+        <a id="twit1" class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
             <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
         </a>
-        <a class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
+        <a id="insta1" class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
             <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
         </a>
-        <a class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
+        <a id="fb1" class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
             <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
         </a>
           <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
@@ -69,17 +69,17 @@
                   <li class="nav-item">
                       <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="twit2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://twitter.com/Msuwaterski">
                           <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
                       </a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="insta2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
                           <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
                       </a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="fb2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
                           <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
                       </a>
@@ -88,143 +88,146 @@
           </div>
         </nav>
 
-        <div class="row pt-1">
-        <h1 class="text-xs-center">2017 Schedule</h1>
+        <div class="router">
+
+            <div class="row pt-1">
+            <h1 class="text-xs-center">2017 Schedule</h1>
+                <hr>
+            </div>
+
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytkcrw-bn1306.files.1drv.com/y3maUhfdX5sIOqT11JjWxVywlA4FKtAAOLui68MCi3UGbEaDA6L2WSNN87b9fIwAEEhKf2rMhDJonVzoheMKg9JP1bi_tjdco3aNHQDd_RKxcTveTtWDlYeiDOUau6Vq--Cd8WH1EFVMHqF6LUBz80bISMLgSu1V4WxnmzZp0XYDhA?width=600&height=600&cropmode=none" alt="Head to Head" width="300px">
+            </div>
+
+            <div class="row">
+                <h2 class="text-xs-center mt-1">Head to Head</h2>
+            </div>
+
+            <div class="row mx-2">
+                <p>
+                The	Annual UMSU Head to Head is a great way to start off the season with a friendly competition between friendly rivals. U of M and MSU warm up for the season ahead. This is our most relaxed tournament with appearances from other teams such as GVSU, EMU, and WMU.
+                </p>
+                <p>
+                When: Labor Day - Monday, September 4th
+                </p>
+                <p>
+                Location: Tivoli Gardens, <a href="https://goo.gl/maps/bLB75bHVCWC2" target="_blank">10393 Jewell Road, Gaines, MI 48436</a>
+                </p>
+            </div>
+
             <hr>
-        </div>
 
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytkcrw-bn1306.files.1drv.com/y3maUhfdX5sIOqT11JjWxVywlA4FKtAAOLui68MCi3UGbEaDA6L2WSNN87b9fIwAEEhKf2rMhDJonVzoheMKg9JP1bi_tjdco3aNHQDd_RKxcTveTtWDlYeiDOUau6Vq--Cd8WH1EFVMHqF6LUBz80bISMLgSu1V4WxnmzZp0XYDhA?width=600&height=600&cropmode=none" alt="Head to Head" width="300px">
-        </div>
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://8jroba-bn1306.files.1drv.com/y3mxdWHvomS6Ofr-aVLI--QDntlEBIoj1O8nEYwJ0Li-HwQywpIRU_VMWe3EBIqwrPTnUuvZOUWXgw9pbn3FFVeGqFg1Ley5UQv3MntObyLdtM7I1fj4LvfG90MjwDBcXI4CQUCBPI-qVsvmcbx77xMX-ofu4Rxo6hcXJyl4f5ZzJQ?width=4608&height=2592&cropmode=none" alt="Tivoli Gardens" width="500px">
+            </div>
 
-        <div class="row">
-            <h2 class="text-xs-center mt-1">Head to Head</h2>
-        </div>
+            <div class="row">
+                <h2 class="text-xs-center mt-1">Ripfest</h2>
+            </div>
 
-        <div class="row mx-2">
-            <p>
-            The	Annual UMSU Head to Head is a great way to start off the season with a friendly competition between friendly rivals. U of M and MSU warm up for the season ahead. This is our most relaxed tournament with appearances from other teams such as GVSU, EMU, and WMU.
-            </p>
-            <p>
-            When: Labor Day - Monday, September 4th
-            </p>
-            <p>
-            Location: Tivoli Gardens, <a href="https://goo.gl/maps/bLB75bHVCWC2" target="_blank">10393 Jewell Road, Gaines, MI 48436</a>
-            </p>
-        </div>
+            <div class="row mx-2">
+                <p>
+                Michigan State Spartans host their own annual tournament, Ripfest! This is a great tournament to attend with representation from many midwest teams competing to qualify for conferences. This tournament skiiers are able to show their true potential as they get accustomed to the Collegiate Tournament style of competition.
+                </p>
+                <p>
+                When: Friday, September 8th - Sunday, September 10th
+                </p>
+                <p>
+                Location: Tivoli Gardens, <a href="https://goo.gl/maps/bLB75bHVCWC2" target="_blank">10393 Jewell Road, Gaines, MI 48436</a>
+                </p>
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://8jroba-bn1306.files.1drv.com/y3mxdWHvomS6Ofr-aVLI--QDntlEBIoj1O8nEYwJ0Li-HwQywpIRU_VMWe3EBIqwrPTnUuvZOUWXgw9pbn3FFVeGqFg1Ley5UQv3MntObyLdtM7I1fj4LvfG90MjwDBcXI4CQUCBPI-qVsvmcbx77xMX-ofu4Rxo6hcXJyl4f5ZzJQ?width=4608&height=2592&cropmode=none" alt="Tivoli Gardens" width="500px">
-        </div>
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://8jqygw-bn1306.files.1drv.com/y3mb-h6qD8iAiI_qd0Wb_4O5ZehFWvhr8DGJDisZutxTvKFsndlkLyhzv5PS4M_qCHrQE9tNEgiS5q9q01k2EnNG1aPvPDtfcnuw3x9cUXmAhGCLTpoPAJpivLJTxNcDXK3fUKXmb14Ac5wDSt8V3_nhe-Oi3odIIpiCHj8UkPzkoQ?width=1280&height=722&cropmode=none" alt="TBA" width="500px">
+            </div>
 
-        <div class="row">
-            <h2 class="text-xs-center mt-1">Ripfest</h2>
-        </div>
+            <div class="row">
+                <h2 class="text-xs-center mt-1">TBA</h2>
+            </div>
 
-        <div class="row mx-2">
-            <p>
-            Michigan State Spartans host their own annual tournament, Ripfest! This is a great tournament to attend with representation from many midwest teams competing to qualify for conferences. This tournament skiiers are able to show their true potential as they get accustomed to the Collegiate Tournament style of competition.
-            </p>
-            <p>
-            When: Friday, September 8th - Sunday, September 10th
-            </p>
-            <p>
-            Location: Tivoli Gardens, <a href="https://goo.gl/maps/bLB75bHVCWC2" target="_blank">10393 Jewell Road, Gaines, MI 48436</a>
-            </p>
-        </div>
+            <div class="row mx-2">
+                <p>
+                TBA
+                </p>
+                <p>
+                When: Friday, September 16th - Sunday, September 18th
+                </p>
+                <p>
+                Location: TBA
+                </p>
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://8jqygw-bn1306.files.1drv.com/y3mb-h6qD8iAiI_qd0Wb_4O5ZehFWvhr8DGJDisZutxTvKFsndlkLyhzv5PS4M_qCHrQE9tNEgiS5q9q01k2EnNG1aPvPDtfcnuw3x9cUXmAhGCLTpoPAJpivLJTxNcDXK3fUKXmb14Ac5wDSt8V3_nhe-Oi3odIIpiCHj8UkPzkoQ?width=1280&height=722&cropmode=none" alt="TBA" width="500px">
-        </div>
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytmb0g-bn1306.files.1drv.com/y3m6CJ92LbIlxlSnIolRgOH4mJRAwrSwVQU56jFngQGZdA1iQkS3f7AdZBcLBdXnTHYXUp-Bhc_WcHH74RN40DEdssW7-aHJ5yTiB1aYhJ6hWOP5bk72gQjNx3-MHSMRLIwQMiGDDgSfXuvLLgr3FE5XPAJBH-jlEX_3QmIuN_vdY4?width=2048&height=1536&cropmode=none" alt="Conferences" width="500px">
+            </div>
 
-        <div class="row">
-            <h2 class="text-xs-center mt-1">TBA</h2>
-        </div>
+            <div class="row">
+                <h2 class="text-xs-center mt-1">Great Lakes Conferences</h2>
+            </div>
 
-        <div class="row mx-2">
-            <p>
-            TBA
-            </p>
-            <p>
-            When: Friday, September 16th - Sunday, September 18th
-            </p>
-            <p>
-            Location: TBA
-            </p>
-        </div>
+            <div class="row mx-2">
+                <p>
+                The Great Lakes Conference Championship Tournament includes some of the top ranked teams in the Conference competing for one of the eight spots in the Midwest Regional Tournament. Schools have to have a total of team score that qualifies for this tournament. 
+                <!--This tournament is our first roadtrip down to Van Wert, Ohio. On site camping is available with a waterslide too! Skiing under stadium style lights on Friday night is also available.-->
+                </p>
+                <p>
+                When: Friday, September 22nd - Sunday, September 24th
+                </p>
+                <p>
+                Location: TBA
+                </p>
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytmb0g-bn1306.files.1drv.com/y3m6CJ92LbIlxlSnIolRgOH4mJRAwrSwVQU56jFngQGZdA1iQkS3f7AdZBcLBdXnTHYXUp-Bhc_WcHH74RN40DEdssW7-aHJ5yTiB1aYhJ6hWOP5bk72gQjNx3-MHSMRLIwQMiGDDgSfXuvLLgr3FE5XPAJBH-jlEX_3QmIuN_vdY4?width=2048&height=1536&cropmode=none" alt="Conferences" width="500px">
-        </div>
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://zu6oaa-bn1306.files.1drv.com/y3mHzFuL_GHl5Sjyj_PsLSFEMkEeyGWyYiEfcCVkZ0rvAxSGqGflJ4zYqIhKwSGDh8EJKTys7lu-uY_9ZhAjcoehXmwiKSJ0AZSuHgcxHQRdrlqvONtpk0a1QJPyvHkRp5AwwlCrPfQQ0z7TqYBoAFipauZQQZJn3e2eDOGD4ikcDA?width=800&height=533&cropmode=none" alt="Regionals" width="500px">
+            </div>
 
-        <div class="row">
-            <h2 class="text-xs-center mt-1">Great Lakes Conferences</h2>
-        </div>
+            <div class="row">
+                <h2 class="text-xs-center mt-1">Regionals</h2>
+            </div>
 
-        <div class="row mx-2">
-            <p>
-            The Great Lakes Conference Championship Tournament includes some of the top ranked teams in the Conference competing for one of the eight spots in the Midwest Regional Tournament. Schools have to have a total of team score that qualifies for this tournament. 
-            <!--This tournament is our first roadtrip down to Van Wert, Ohio. On site camping is available with a waterslide too! Skiing under stadium style lights on Friday night is also available.-->
-            </p>
-            <p>
-            When: Friday, September 22nd - Sunday, September 24th
-            </p>
-            <p>
-            Location: TBA
-            </p>
-        </div>
+            <div class="row mx-2">
+                <p>
+                The Midwest Collegiate Regionals is the largest tournament in the regular fall season. The top eight teams from the Great Lakes Conference and the top eight from the Great Planes Conference compete to determine who will be the best in the Midwest and who can qualify for Nationals. A longer road trip is required for this tournament, carpools leave on Thursday night, with skiing all weekend.
+                </p>
+                <p>
+                When: Thrusday, September 28th - Sunday, October 1st
+                </p>
+                <p>
+                Location: PITS Lake <a href="https://goo.gl/maps/aUKkyNUnDkE2" target="_blank">5202 W Harristown Blvd, Decatur, IL 62522</a>
+                </p>
+            </div>
 
-        <hr>
+            <hr>
 
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://zu6oaa-bn1306.files.1drv.com/y3mHzFuL_GHl5Sjyj_PsLSFEMkEeyGWyYiEfcCVkZ0rvAxSGqGflJ4zYqIhKwSGDh8EJKTys7lu-uY_9ZhAjcoehXmwiKSJ0AZSuHgcxHQRdrlqvONtpk0a1QJPyvHkRp5AwwlCrPfQQ0z7TqYBoAFipauZQQZJn3e2eDOGD4ikcDA?width=800&height=533&cropmode=none" alt="Regionals" width="500px">
-        </div>
+            <div class="row">
+                <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytkjjg-bn1306.files.1drv.com/y3mXcrZySP99DHbghVMJmEvRXjPoXrJGJCuqhOXZ_iBXqCj-S0k7-wAbLObyrZAkNqxFzui5iBTn9Az0Uv6yOpBvDmjUAJElf1LI-aa8aUh1ZGt0Dz7XSJukhzcywiQoNrJlQ_l5AiDmC7gepV2-PTskM1oadu6mQIT6Hd52tKtpyY?width=1920&height=1080&cropmode=none" alt="Bennets Ski" width="500px">
+            </div>
 
-        <div class="row">
-            <h2 class="text-xs-center mt-1">Regionals</h2>
-        </div>
+            <div class="row">
+                <h2 class="text-xs-center mt-1">Collegiate Water Ski Nationals</h2>
+            </div>
 
-        <div class="row mx-2">
-            <p>
-            The Midwest Collegiate Regionals is the largest tournament in the regular fall season. The top eight teams from the Great Lakes Conference and the top eight from the Great Planes Conference compete to determine who will be the best in the Midwest and who can qualify for Nationals. A longer road trip is required for this tournament, carpools leave on Thursday night, with skiing all weekend.
-            </p>
-            <p>
-            When: Thrusday, September 28th - Sunday, October 1st
-            </p>
-            <p>
-            Location: PITS Lake <a href="https://goo.gl/maps/aUKkyNUnDkE2" target="_blank">5202 W Harristown Blvd, Decatur, IL 62522</a>
-            </p>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <img class="img-fluid rounded mx-auto d-block imgShadow" src="https://ytkjjg-bn1306.files.1drv.com/y3mXcrZySP99DHbghVMJmEvRXjPoXrJGJCuqhOXZ_iBXqCj-S0k7-wAbLObyrZAkNqxFzui5iBTn9Az0Uv6yOpBvDmjUAJElf1LI-aa8aUh1ZGt0Dz7XSJukhzcywiQoNrJlQ_l5AiDmC7gepV2-PTskM1oadu6mQIT6Hd52tKtpyY?width=1920&height=1080&cropmode=none" alt="Bennets Ski" width="500px">
-        </div>
-
-        <div class="row">
-            <h2 class="text-xs-center mt-1">Collegiate Water Ski Nationals</h2>
-        </div>
-
-        <div class="row mx-2">
-            <p>
-            Collegiate Waterski Nationals are technically outside of the regular fall season, but it is the result of all the hard work and talent that is put into all the tournaments previous. Division 1 Nationals is restricted to only the top couple of teams from each region and then Division 2 consists of the 3-5th teams from each region. Every year a few wild card teams are chosen to attend as well. This is a extended weekend trip with lodging in hotels and transportation up to team's preference.
-            </p>
-            <p>
-            When: Wednesday, October 11th - Sunday, October 15th
-            </p>
-            <p>
-            Location: Bennett's Boat and Ski, <a href="https://goo.gl/maps/gmfSwzgh1FE2" target="_blank">18605 Barnett Rd, Zachary, LA 70791</a>
-            </p>
+            <div class="row mx-2">
+                <p>
+                Collegiate Waterski Nationals are technically outside of the regular fall season, but it is the result of all the hard work and talent that is put into all the tournaments previous. Division 1 Nationals is restricted to only the top couple of teams from each region and then Division 2 consists of the 3-5th teams from each region. Every year a few wild card teams are chosen to attend as well. This is a extended weekend trip with lodging in hotels and transportation up to team's preference.
+                </p>
+                <p>
+                When: Wednesday, October 11th - Sunday, October 15th
+                </p>
+                <p>
+                Location: Bennett's Boat and Ski, <a href="https://goo.gl/maps/gmfSwzgh1FE2" target="_blank">18605 Barnett Rd, Zachary, LA 70791</a>
+                </p>
+            </div>
         </div>
 
     </div>
-
+<script src="./main.js"></script>
 </body>
 </html>

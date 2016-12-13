@@ -21,33 +21,32 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
 
 </head>
-<body>
+<body onload="size()" onresize="size()">
     <div class="container">
 
         <div class="row">
-          <div class="col-xs-2">
+          <div id="spartyhead1" class="col-xs-2">
             <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
           </div>
           <div class="col-xs-12 col-md-8">
             <h1 class="text-xs-center" id="title">Michigan State Water Ski Club</h1>
           </div>
-          <div class="col-xs-2">
+          <div id="spartyhead2" class="col-xs-2">
             <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
           </div>
         </div>
 
         <nav class="navbar navbar-light bg-faded my-2">
         <img src="https://jamqgw-bn1306.files.1drv.com/y3mrfBHVU7bRAOBkxN_ycRLlfBSHCknFyqsRmeHKdVs_mSUMgqrl8QImTXNPrHW9CGSp1DyUmJnRvuqBIFKPLTO4uEZZ77SopI5ea9NwQ2UqiF5cvLYvXPNJMULAa0d4mezVNZD6LnkFS4C0GUov6cwp4tIdSoWPCQsIOlExx_PBpM?width=218&height=154&cropmode=none" class="hidden-md-up img-fluid" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" width="50px">
-        <a class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
+        <a id="twit1" class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
             <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
         </a>
-        <a class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
+        <a id="insta1" class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
             <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
         </a>
-        <a class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
+        <a id="fb1" class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
             <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
         </a>
           <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
@@ -70,17 +69,17 @@
                   <li class="nav-item">
                       <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="twit2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://twitter.com/Msuwaterski">
                           <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
                       </a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="insta2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
                           <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
                       </a>
                   </li>
-                  <li class="nav-item float-xs-right">
+                  <li id="fb2" class="nav-item float-xs-right">
                       <a class="nav-link mediaSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
                           <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
                       </a>
@@ -89,31 +88,32 @@
           </div>
         </nav>
 
-      <div class="row pt-1">
-        <h1 class="text-xs-center">About</h1>
-          <hr>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-8">
-          <p>The MSU Waterski team is a club sport that has been on campus since 1982 and has been to more National Competitions than any other Midwest team. 
-            In the past two years we have qualified and 9th and 11th in Division 1 Nationals. Our 3-event team looks forward to improvement and competition in the upcoming seasons.
-          </p>
-          <p>
-            The tournament season during the fall includes weekends away throughout the Midwest where MSU actively competes in Slalom, Trick, and Jump. We practice on the the Grand River, in Lansing, MI, which is about a 10-minute drive away from campus. Our site includes a slalom course which is upheld and maintained by the team and our advisor, Scott Thomas.
-          </p>
-            During the off-season, we visit Bennett's Ski School in Zachary, LA, snowboard and ski at Boyne Mountain, host a formal banquet on the and socialize with other MSU clubs. Being a part of the MSU Waterski & Wakeboard Team is a great way to get to know other students at MSU and throughout the Midwest by doing what we love and spending time on the water. So come check us out!
+    <div class="router">    
+        <div class="row pt-1">
+            <h1 class="text-xs-center">About</h1>
+            <hr>
         </div>
-        <div class="col-xs-12 col-md-4 my-1">
-          <img class="img-fluid rounded imgShadow" src="https://zu4wva-bn1306.files.1drv.com/y3mlhGx_dUuN8Gb8j0OcIFF2mX8KkTaYzG9qZ2NrlSG6AOE5N2d4DIVhdI8AuJc5d2wM4KnVtWsnYhmq8LVlXqGYrbQszhCZ6mzVfSEYLWPMwnsoIMIhTqHv_bWY9WeUh4g2bYfGs1f4mXUSD9Vac6LlHF2h6JKO1mBV2UmAOlgDwc?width=738&height=743&cropmode=none" alt="Nationals 2016">
+
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+            <p>The MSU Waterski team is a club sport that has been on campus since 1982 and has been to more National Competitions than any other Midwest team. 
+                In the past two years we have qualified and 9th and 11th in Division 1 Nationals. Our 3-event team looks forward to improvement and competition in the upcoming seasons.
+            </p>
+            <p>
+                The tournament season during the fall includes weekends away throughout the Midwest where MSU actively competes in Slalom, Trick, and Jump. We practice on the the Grand River, in Lansing, MI, which is about a 10-minute drive away from campus. Our site includes a slalom course which is upheld and maintained by the team and our advisor, Scott Thomas.
+            </p>
+                During the off-season, we visit Bennett's Ski School in Zachary, LA, snowboard and ski at Boyne Mountain, host a formal banquet on the and socialize with other MSU clubs. Being a part of the MSU Waterski & Wakeboard Team is a great way to get to know other students at MSU and throughout the Midwest by doing what we love and spending time on the water. So come check us out!
+            </div>
+            <div class="col-xs-12 col-md-4 my-1">
+            <img class="img-fluid rounded imgShadow" src="https://zu4wva-bn1306.files.1drv.com/y3mlhGx_dUuN8Gb8j0OcIFF2mX8KkTaYzG9qZ2NrlSG6AOE5N2d4DIVhdI8AuJc5d2wM4KnVtWsnYhmq8LVlXqGYrbQszhCZ6mzVfSEYLWPMwnsoIMIhTqHv_bWY9WeUh4g2bYfGs1f4mXUSD9Vac6LlHF2h6JKO1mBV2UmAOlgDwc?width=738&height=743&cropmode=none" alt="Nationals 2016">
+            </div>
         </div>
-      </div>
 
-      <div class="row my-1">
-        <img class="img-fluid rounded d-block mx-auto imgShadow" src="https://vev4dw-bn1306.files.1drv.com/y3mt5ySQH6IDPwy9gF69ybKzg-g_-mVB1Er9wu_-uv9e-72-ej_dFJkU2rE0mCksOR1FtXKNZUwefU-rWEUqtNgvq_xtnEZFbi4-ReENR7mHKja8VamE86xUKxQ8vMB9i2E-P1MpDBFs1qW85k36eDKIlAW99xzGuUHqlzkJ3TjqgA?width=712&height=652&cropmode=none" alt="Sparty with Boat">
-      </div>
-
+        <div class="row my-1">
+            <img class="img-fluid rounded d-block mx-auto imgShadow" src="https://vev4dw-bn1306.files.1drv.com/y3mt5ySQH6IDPwy9gF69ybKzg-g_-mVB1Er9wu_-uv9e-72-ej_dFJkU2rE0mCksOR1FtXKNZUwefU-rWEUqtNgvq_xtnEZFbi4-ReENR7mHKja8VamE86xUKxQ8vMB9i2E-P1MpDBFs1qW85k36eDKIlAW99xzGuUHqlzkJ3TjqgA?width=712&height=652&cropmode=none" alt="Sparty with Boat">
+        </div>
     </div>
-
+</div>
+<script src="./main.js"></script>
 </body>
 </html>
