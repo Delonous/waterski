@@ -19,3 +19,9 @@ function size() {
         document.getElementById('fb1').style.display = 'none';
     }
 }
+
+ $(window).on('load', function () {
+      document.getElementById('content').style.display = 'block';
+      $('#content').addClass('router');    
+      document.getElementById('loader').style.display = 'none';
+ });

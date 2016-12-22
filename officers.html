@@ -24,7 +24,9 @@
 
 </head>
 <body onload="size()" onresize="size()">
-    <div class="container">
+    <div id="loader" class="loader"></div>
+
+    <div class="container" id="content" class="router">
 
         <div class="row">
           <div id="spartyhead1" class="col-xs-2">
@@ -88,12 +90,12 @@
           </div>
         </nav>
 
-        <div class="router">
-
             <div class="row pt-1">
-                <h1 class="text-xs-center">2017 Officers</h1>
-                <div class="text-xs-center">November Elections</div>
-                <hr>
+                <div class="col-xs-12">
+                    <h1 class="text-xs-center">2017 Officers</h1>
+                    <div class="text-xs-center">November Elections</div>
+                    <hr>
+                </div>
             </div>
 
             <div class="row">
@@ -102,7 +104,7 @@
                         <div class="card-header">
                             President
                         </div>
-                        <img class="img-fluid" src="https://veuamw-bn1306.files.1drv.com/y3mc6ZTdPWYRa9DoRXxVOvxWniXHzhVxCTG9uqCOxU2QCnXJXd43KGYR7z7hP3J0JOcuQQhpFUN_B9lT4vXCkX3G7SeD2ksA_iM9iKDHUNiKajMXS_ghWmBP07iTKSafDHT0En1hFmQkOtY8mMsov6K7NmYMVFwP8UfthfA0miSbrA?width=700&height=700&cropmode=none" alt="Card image">
+                        <img class="img-fluid" src="https://v8cmyq-bn1306.files.1drv.com/y3mzNZiU-tWI1bwyKYLXC0fnfJswCmgcKjFsjU2MzsP1z1ztvYxkewfTnj0QHcOyUMn7fwUfSE-YLPFUohn8gHMLLlkLG-vlIA7G2szWwianWquLtvdqf8h8SWdZmpWu2CfbAP9rHMjtp8W4vgB0Fva4HomnOR2RVMX6qcqjYz_T50?width=700&height=700&cropmode=none" alt="Card image">
                         <div class="card-block">
                             <h4 class="card-title">Jessica Carr</h4>
                             <p class="card-text">Senior</p>
@@ -232,8 +234,6 @@
                 </div>
             </div>
         </div>
-
-    </div>
 
 <script src="./main.js"></script>
 </body>

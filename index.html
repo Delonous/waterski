@@ -24,13 +24,16 @@
 </head>
 
 <body onload="size()" onresize="size()">
-    <div class="container">
+
+    <div id="loader" class="loader"></div>
+
+    <div class="container" id="content" class="router">
 
         <div class="row">
           <div id="spartyhead1" class="col-xs-2">
             <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 col-md-8 d-block mx-auto">
             <h1 class="text-xs-center" id="title">Michigan State Water Ski Club</h1>
           </div>
           <div id="spartyhead2" class="col-xs-2">
@@ -88,10 +91,12 @@
           </div>
         </nav>
         
-        <div class="router">
+        <div>
             <div class="row pt-1">
-            <h1 class="text-xs-center">Home</h1>
-                <hr>
+                <div class="col-xs-12">
+                    <h1 class="text-xs-center">Home</h1>
+                    <hr>
+                </div>
             </div>
 
             <div class="row">
