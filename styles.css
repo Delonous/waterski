@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
 }
 
 .minHSpacing {
-    margin-left: 8vw;
+    margin-left: 5vw;
 }
 
 nav {
@@ -67,7 +67,9 @@ nav a {
 }
 
 #menu-button {
-    margin-left: -8vw;
+    position: absolute;
+    left: 20px;
+    top: auto;
 }
 
 #spartyhead1, #spartyhead2, #twit1, #twit2, #fb1, #fb2, #insta1, #insta2 {
