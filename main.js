@@ -1,4 +1,9 @@
+var time;
 function size() {
+    time = 0;
+    setInterval(function() {
+        time++;
+    }, 100)
     if (window.innerWidth < 768) {
         document.getElementById('spartyhead1').style.display = 'none';
         document.getElementById('spartyhead2').style.display = 'none';

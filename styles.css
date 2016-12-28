@@ -12,10 +12,6 @@ body {
    box-shadow: 0px 0px 22px 3px rgba(24,69,59,1);
 }
 
-#load-text {
-    color: white;
-}
-
 hr {
     background: rgb(24, 69, 59);
 }
@@ -68,6 +64,10 @@ nav a {
     color: rgb(245, 245, 245) !important;
     letter-spacing: .05em;
     cursor: pointer;
+}
+
+#menu-button {
+    margin-left: -8vw;
 }
 
 #spartyhead1, #spartyhead2, #twit1, #twit2, #fb1, #fb2, #insta1, #insta2 {
