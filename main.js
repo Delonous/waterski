@@ -1,7 +1,7 @@
 var time;
 function size() {
 
-    window.location = "https://msu.edu/~waterski";
+    //window.location = "https://msu.edu/~waterski";
     
     if (window.innerWidth < 768) {
         document.getElementById('spartyhead1').style.display = 'none';
@@ -27,4 +27,21 @@ function size() {
  $(window).on('load', function () {
       document.getElementById('loader').style.display = 'none';
       document.getElementById('content').style.display = 'block';
+
+      setInterval(function() {
+          var color = getRandomColor();
+          document.getElementById('formal').style.color = color;
+          document.getElementById('formal').style.textShadow = "0 0 20px" + color;          
+      }, 500);
+
  });
+
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}

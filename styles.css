@@ -63,9 +63,14 @@ nav {
 }
 
 nav a {
-    color: rgb(245, 245, 245) !important;
+    color: rgb(245, 245, 245);
     letter-spacing: .05em;
     cursor: pointer;
+}
+
+nav a:hover {
+    color: rgb(245, 245, 245);
+    text-shadow: 0 0 15px rgb(245, 245, 245);
 }
 
 #menu-button {
@@ -103,7 +108,7 @@ nav a {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 white;
+    -webkit-box-shadow: 0 0 0 0 rgb(245, 245, 245);;
   }
   70% {
       -webkit-box-shadow: 0 0 0 10px rgba(24,69,59, 0);
@@ -114,8 +119,8 @@ nav a {
 }
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 white;
-    box-shadow: 0 0 0 0 white;
+    -moz-box-shadow: 0 0 0 0 rgb(245, 245, 245);;
+    box-shadow: 0 0 0 0 rgb(245, 245, 245);;
   }
   70% {
       -moz-box-shadow: 0 0 0 10px rgba(24,69,59, 0);
