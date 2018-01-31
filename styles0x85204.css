@@ -131,26 +131,17 @@ nav a:hover {
 }
 
 .t1 {
-    position: relative;
-    left: 44%;
-    width: 0;
-    border-left: 4px solid green;
+    padding-right: 5px;
+    text-align: right;
+    position: absolute;
+    width: 44%;
+    border-right: 4px solid green;
 }
 
 .t2 {
-    position: relative;
-    left: 89%;
-    width: 0;
-    border-left: 4px solid green;
-}
-
-.t1t {
-    margin-top: -3px;
-    left: 37%;
-    position: absolute;  
-}
-.t2t {
-    margin-top: -3px;
-    left: 81%;
-    position: absolute;  
+    padding-right: 5px;
+    text-align: right;
+    position: absolute;
+    width: 88%;
+    border-right: 4px solid green;
 }
