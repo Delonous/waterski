@@ -134,11 +134,19 @@ nav a:hover {
     padding-right: 5px;
     text-align: right;
     position: absolute;
-    width: 44%;
+    width: 33%;
     border-right: 4px solid green;
 }
 
 .t2 {
+    padding-right: 5px;
+    text-align: right;
+    position: absolute;
+    width: 55%;
+    border-right: 4px solid green;
+}
+
+.t3 {
     padding-right: 5px;
     text-align: right;
     position: absolute;
