@@ -129,3 +129,28 @@ nav a:hover {
       box-shadow: 0 0 0 0 rgba(24,69,59, 0);
   }
 }
+
+.t1 {
+    position: relative;
+    left: 44%;
+    width: 0;
+    border-left: 4px solid green;
+}
+
+.t2 {
+    position: relative;
+    left: 89%;
+    width: 0;
+    border-left: 4px solid green;
+}
+
+.t1t {
+    margin-top: -3px;
+    left: 37%;
+    position: absolute;  
+}
+.t2t {
+    margin-top: -3px;
+    left: 81%;
+    position: absolute;  
+}
