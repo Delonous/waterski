@@ -1,125 +1,112 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Michigan State Water Ski</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113319667-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    gtag('config', 'UA-113319667-1');
+    </script>
 
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>Michigan State Water Ski</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="./styles.css">
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles0x85204.css">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
 </head>
 
 <body onload="size()" onresize="size()">
 
-    <div id="loader" class="loader">
-        <img id="spartLoad" src="https://v8cfgg-bn1306.files.1drv.com/y3mdDyr2ondxti-jr10hHnM44ehzAmZltWvngDZmvMZpwwWSH5OzbagDeUye0x8yH6jG1Hs_WVh2-di7rZY-K2cSq1fIWjPjFGvPy0dMdTfp4863zrZpaCu4zcAdPew7R1IqZpZOGm1-SY8tpSOzNH3v-bPrrLC2u4nDD5jZqcCcgo?width=221&height=256&cropmode=none" alt="Spartan Head">
-    </div>
+    <!-- Modal
+        js in iframe.js
+     -->
+  <div class="modal fade" id="donationModal" tabindex="-1" role="dialog" aria-labelledby="donationModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="modalTitle">Help us fundraise for our boat!</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Our team has decided to buy a boat due to increasing lease prices. We need your help to accomplish this goal. Head over to our donations page to find out more details!
+                <h3 class="text-center">
+                        <a href="./donations.html">Donate</a>
+                </h3>
+                <hr>
+                Also purchase your ticket to our Winter Formal (March 24<sup>th</sup>), all are welcome!
+                <h3 class="text-center">
+                    <a href="./formal.html">Formal Tickets</a>
+                </h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="container" id="content" class="router">
-
+        
+        <div id="loader" class="loader">
+            <img id="spartLoad" src="./images/spartanHeadLoad.png" alt="Spartan Head">
+        </div>
+        
+        <div class="container-fluid" id="content" class="router">
+        
         <div class="row">
-          <div id="spartyhead1" class="col-xs-2">
-            <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
+          <div id="spartyhead1" class="col-2">
+            <img class="img-fluid d-block mx-auto mt-1" src="./images/spartanHead.png" alt="Spartan Logo" width="70px">
           </div>
-          <div class="col-xs-12 col-md-8 d-block mx-auto">
-            <img class="d-block mx-auto" id="title" alt="Michigan State Water Ski Club" src="https://hmlfgw-bn1305.files.1drv.com/y3mzo_hwyZspM3nLZ6Txo6mWbdkE_SbwXINK7r4Gs-odJbKW2It-_G18D2I4sj7x_PfWxo0fD8F1bdF9T4GJ-DSawMAGb6S45Z3hwPsPDX00slhPV-qNaCalpxw-TcOySqlTx3jvykIw9PCtFG9oMdvdT--MtL4j4UBbJLF9-XwSEU?width=1850&height=86&cropmode=none">
+          <div class="col-12 col-lg-8 d-block mx-auto">
+            <img class="d-block mx-auto" id="title" alt="Michigan State Water Ski Club" src="./images/title.PNG">
         </div>
-          <div id="spartyhead2" class="col-xs-2">
-            <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
+          <div id="spartyhead2" class="col-2">
+            <img class="img-fluid d-block mx-auto mt-1" src="./images/spartanHead.png" alt="Spartan Logo" width="70px">
           </div>
         </div>
         
-        <nav class="navbar navbar-inverse bg-faded my-2 text-xs-center">
-        <img id="menu-button" src="https://jamqgw-bn1306.files.1drv.com/y3mrfBHVU7bRAOBkxN_ycRLlfBSHCknFyqsRmeHKdVs_mSUMgqrl8QImTXNPrHW9CGSp1DyUmJnRvuqBIFKPLTO4uEZZ77SopI5ea9NwQ2UqiF5cvLYvXPNJMULAa0d4mezVNZD6LnkFS4C0GUov6cwp4tIdSoWPCQsIOlExx_PBpM?width=218&height=154&cropmode=none" class="hidden-md-up img-fluid" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" width="50px">
-        <a id="twit1" class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
-            <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
-        </a>
-        <a id="insta1" class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
-            <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
-        </a>
-        <a id="fb1" class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
-            <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
-        </a>
-          <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
-              <ul class="nav navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./schedule.html">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./officers.html">Officers</a>
-                  </li>
-                 <li class="nav-item">
-                      <a class="nav-link" href="./alumni.html">Alumni</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./sponsor.html">Sponsors</a>
-                  </li>
-                  <!--<li class="nav-item">
-                      <a id="formal" class="nav-link" href="./formal.html">FORMAL</a>
-                  </li>-->
-                  <li id="twit2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
-                          <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
-                      </a>
-                  </li>
-                  <li id="insta2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
-                          <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
-                      </a>
-                  </li>
-                  <li id="fb2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
-                          <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
-                      </a>
-                  </li>
-              </ul>
-          </div>
-        </nav>
-        
+        <div id="nav"></div>
+
         <div>
             <div class="row pt-1">
-                <div class="col-xs-12">
-                    <h1 class="text-xs-center">Home</h1>
+                <div class="col-12">
+                    <h1 class="text-center">Home</h1>
                     <hr>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-12">
-                    The Michigan State University Waterski Club is a competitive, nationally ranked team who represents a wide range of skiing abilities in slalom, trick and jump. We are a team of about 20 women and men with varying skill levels from beginner to returning tournament skier. Our main tournament season is in the fall and we also compete in several spring and summer tournaments. We practice on the Grand River in Lansing, MI behind a beautiful Malibu Response from Tommy's Michigan. Check out our Instagram, Facebook, and Twitter pages with links located in the menu bar.
+                <div class="col-12">
+                    The Michigan State University Water Ski Club is a competitive, nationally ranked team who represents a wide range of skiing abilities in slalom, trick and jump. We are a team of about 20 women and men with varying skill levels from beginner to returning tournament skier. Our main tournament season is in the fall and we also compete in several spring and summer tournaments. We practice on the Grand River in Lansing, MI behind a beautiful Malibu Response from Tommy's Michigan. Check out our Instagram, Facebook, and Twitter pages with links located in the menu bar.
                 </div>
+                <iframe class="img-fluid d-block mx-auto" id="iMSU" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <hr>
-                <p class="text-xs-center"><a href="https://1drv.ms/w/s!Ak9Zw5cKyHcLrjVkUvl9VJuVJCrM" target="_blank">Constitution</a> and <a href="https://1drv.ms/b/s!Ak9Zw5cKyHcLrif_XSVf-ZAW0aPq" target="_blank">Mission Statement</a></p>
+                <p class="text-center"><a href="https://1drv.ms/w/s!Ak9Zw5cKyHcLrjVkUvl9VJuVJCrM" target="_blank">Constitution</a> and <a href="https://1drv.ms/b/s!Ak9Zw5cKyHcLrif_XSVf-ZAW0aPq" target="_blank">Mission Statement</a></p>
             <hr>
 
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="text-xs-center">
+                <div class="col-12">
+                    <div class="text-center">
                         <h3>What is 3 event collegiate skiing?</h3>
                         <hr>
                     </div>
@@ -127,15 +114,15 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-12 col-md-8">
-                    <h4 class="text-xs-center">
+                <div class="col-12 col-md-8">
+                    <h4 class="text-center">
                         Slalom
                     </h4>
                     <div>
                         This is scored based on three factors: number of balls skied around, speed of the boat, and length of the rope. If you run a full pass (all six buoys and both gates) you will be able to increase your speed and attempt to run the course again. Your set ends when you either miss a buoy or fall. Max speed for men: 36mph and for women: 34mph. When you achieve maximum speed you start shortening the rope by preset increments.
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-12 col-md-4">
                     <iframe class="img-fluid d-block mx-auto" id="iSlalom" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -143,15 +130,15 @@
             <hr>
 
             <div class="row">
-                <div class="col-xs-12 col-md-8">
-                    <h4 class="text-xs-center">
+                <div class="col-12 col-md-8">
+                    <h4 class="text-center">
                         Trick
                     </h4>
                     <div>
                         You can compete on either a wake board or a trick ski. Points are pre-determined based on the level of difficulty; wakeboard tricks only receive half points. Boat speed and rope length varies on skiers preference.  You have 20 seconds to complete your run and only get one pass for the judges to document your tricks. Your set ends when you use up your time or fall.
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-12 col-md-4">
                     <iframe class="img-fluid d-block mx-auto" id="iTrick" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
@@ -159,23 +146,24 @@
             <hr>
 
             <div class="row mb-2">
-                <div class="col-xs-12 col-md-8">
-                    <h4 class="text-xs-center">
+                <div class="col-12 col-md-8">
+                    <h4 class="text-center">
                         Jump
                     </h4>
                     <div>
                         Known to be the most dangerous and exciting event in collegiate 3-event. Using longer skis with modified fins, a helmet and padded jump suit, skiers compete for distance using the 5 foot jump to launch themselves. Boat speed varies from 26-32mph based on skiers skill and preference. In most cases you allowed 3 jumps or 2 falls.
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-12 col-md-4">
                     <iframe class="img-fluid d-block mx-auto" id="iJump" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 
-<script src="./main.js"></script>
-<script src="./iframesrc.js"></script>
+<script src="./main0x03i5i.js"></script>
+<script src="./nav0x8494.js"></script>
+<script src="./iframesrc0x8493.js"></script>
 
 </body>
 </html>

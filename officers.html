@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113319667-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113319667-1');
+    </script>
   <meta charset="utf-8">
   <title>Michigan State Water Ski</title>
 
@@ -11,134 +20,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./styles.css">
-
+  
+  <link rel="stylesheet" href="./styles0x85204.css">
+  
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
 </head>
+
 <body onload="size()" onresize="size()">
+
     <div id="loader" class="loader">
-        <img id="spartLoad" src="https://v8cfgg-bn1306.files.1drv.com/y3mdDyr2ondxti-jr10hHnM44ehzAmZltWvngDZmvMZpwwWSH5OzbagDeUye0x8yH6jG1Hs_WVh2-di7rZY-K2cSq1fIWjPjFGvPy0dMdTfp4863zrZpaCu4zcAdPew7R1IqZpZOGm1-SY8tpSOzNH3v-bPrrLC2u4nDD5jZqcCcgo?width=221&height=256&cropmode=none" alt="Spartan Head">
+        <img id="spartLoad" src="./images/spartanHeadLoad.png" alt="Spartan Head">
     </div>
 
-    <div class="container" id="content" class="router">
+    <div class="container-fluid" id="content" class="router">
 
         <div class="row">
-          <div id="spartyhead1" class="col-xs-2">
-            <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
+          <div id="spartyhead1" class="col-2">
+            <img class="img-fluid d-block mx-auto mt-1" src="./images/spartanHead.png" alt="Spartan Logo" width="70px">
           </div>
-          <div class="col-xs-12 col-md-8">
-            <img class="d-block mx-auto" id="title" alt="Michigan State Water Ski Club" src="https://hmlfgw-bn1305.files.1drv.com/y3mzo_hwyZspM3nLZ6Txo6mWbdkE_SbwXINK7r4Gs-odJbKW2It-_G18D2I4sj7x_PfWxo0fD8F1bdF9T4GJ-DSawMAGb6S45Z3hwPsPDX00slhPV-qNaCalpxw-TcOySqlTx3jvykIw9PCtFG9oMdvdT--MtL4j4UBbJLF9-XwSEU?width=1850&height=86&cropmode=none">
-          </div>
-          <div id="spartyhead2" class="col-xs-2">
-            <img class="img-fluid d-block mx-auto mt-1" src="https://8jtwvw-bn1306.files.1drv.com/y3m7rjKglqKCmomhfeAgv6KN7T9B05eKExt9v3mxh_q7LyZkFhzHgJGaIl0qlN7olRrvtt4H0IYTu5PalXAl2g6NfsihbFMz9BsLfMbVP2ylgNjw3dr0xaqp8T945CscNVFwfFyGuRfC3aDROcn0BIwTFmAICjy2nCT2tPfswTjrPg?width=221&height=256&cropmode=none" alt="Spartan Logo" width="70px">
+          <div class="col-12 col-lg-8 d-block mx-auto">
+            <img class="d-block mx-auto" id="title" alt="Michigan State Water Ski Club" src="./images/title.PNG">
+        </div>
+          <div id="spartyhead2" class="col-2">
+            <img class="img-fluid d-block mx-auto mt-1" src="./images/spartanHead.png" alt="Spartan Logo" width="70px">
           </div>
         </div>
-
-        <nav class="navbar navbar-inverse bg-faded my-2 text-xs-center">
-        <img id="menu-button" src="https://jamqgw-bn1306.files.1drv.com/y3mrfBHVU7bRAOBkxN_ycRLlfBSHCknFyqsRmeHKdVs_mSUMgqrl8QImTXNPrHW9CGSp1DyUmJnRvuqBIFKPLTO4uEZZ77SopI5ea9NwQ2UqiF5cvLYvXPNJMULAa0d4mezVNZD6LnkFS4C0GUov6cwp4tIdSoWPCQsIOlExx_PBpM?width=218&height=154&cropmode=none" class="hidden-md-up img-fluid" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" width="50px">
-        <a id="twit1" class="nav-link minHSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
-            <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
-        </a>
-        <a id="insta1" class="nav-link minHSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
-            <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
-        </a>
-        <a id="fb1" class="nav-link minHSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
-            <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
-        </a>
-          <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
-              <ul class="nav navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./schedule.html">Schedule</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./officers.html">Officers</a>
-                  </li>
-                 <li class="nav-item">
-                      <a class="nav-link" href="./alumni.html">Alumni</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./sponsor.html">Sponsors</a>
-                  </li>
-                  <!--<li class="nav-item">
-                      <a id="formal" class="nav-link" href="./formal.html">FORMAL</a>
-                  </li>-->
-                  <li id="twit2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://twitter.com/Msuwaterski" target="_blank">
-                          <img class="img-fluid" src="https://8jtpea-bn1306.files.1drv.com/y3maqPfp0kTY9Z6qW5MAF8blYfz6y_XC6JnSR76wLaI3Bnu5x5u9xud2DD22-VpE8LE773SGmR7rK7D2YuzSE172FESkffRHzrJfA2P2PZHtLbPF4JQn9MBdugwQ4230nqci0oPZdIoyKas_oOHVj5wQVeUQCivEsyZmVhe21tSdqA?width=256&height=256&cropmode=none" alt="Twitter" width="35px">
-                      </a>
-                  </li>
-                  <li id="insta2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://www.instagram.com/msuwaterski/" target="_blank">
-                          <img class="img-fluid" src="https://jamqvq-bn1306.files.1drv.com/y3mchQsRCEzUdXUmIPvBZECcQ0txQMXJp_ZIgADwrhV5JseHtXSmsxGFyQ9yJHp7ZflieAKuWw5Bs9-OE3WaEoKUIVv1duPV-okZ4FHl6LmAoKycYUrRB-N-OLl_PQUl_bIuduAFmjeK2nqm6RcyTfA3MM_N3x61yOsIED2tCNj_CE?width=256&height=256&cropmode=none" alt="Instagram" width="35px">
-                      </a>
-                  </li>
-                  <li id="fb2" class="nav-item float-xs-right">
-                      <a class="nav-link mediaSpacing" href="https://www.facebook.com/msuwaterski.1/" target="_blank">
-                          <img class="img-fluid" src="https://v8al7q-bn1306.files.1drv.com/y3mdCij97QncWZ5-JuD2dSAwdHZg2WSYOT9_ydQDD3u4y0L3g6XZxJi_cKwdbvJhT8fVDWtu4jj39uCNgk5GS_ObvLtb7-4LbvBw85qPA3yQiXIQU1NBjIRFKDsnrMXORVH-k_yd6iJYR01CfATMJHTE7w62SjrRWAi1aGSXOr3n3E?width=50&height=50&cropmode=none" alt="Facebook" width="35px">
-                      </a>
-                  </li>
-              </ul>
-          </div>
-        </nav>
-
+        
+        <div id="nav"></div>
+        
             <div class="row pt-1">
-                <div class="col-xs-12">
-                    <h1 class="text-xs-center">2017 Officers</h1>
-                    <div class="text-xs-center">November Elections</div>
+                <div class="col-12">
+                    <h1 class="text-center">2018 Officers</h1>
+                    <div class="text-center">November Elections</div>
                     <hr>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             President
                         </div>
-                        <img class="img-fluid" src="https://v8cmyq-bn1306.files.1drv.com/y3mzNZiU-tWI1bwyKYLXC0fnfJswCmgcKjFsjU2MzsP1z1ztvYxkewfTnj0QHcOyUMn7fwUfSE-YLPFUohn8gHMLLlkLG-vlIA7G2szWwianWquLtvdqf8h8SWdZmpWu2CfbAP9rHMjtp8W4vgB0Fva4HomnOR2RVMX6qcqjYz_T50?width=700&height=700&cropmode=none" alt="President">
+                        <img class="img-fluid" src="./images/chris.JPG" alt="President">
                         <div class="card-block">
-                            <h4 class="card-title">Jessica Carr</h4>
-                            <p class="card-text">Senior</p>
-                        </div>
-                        </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
-                        <div class="card-header">
-                            Vice President
-                        </div>
-                        <img class="img-fluid" src="https://vevqvg-bn1306.files.1drv.com/y3mZY-TGR4OZ5nAglFxfOmydYg4jbfDdbJfA0qZ43HlbkJdiDg5yPGF08rradCuLswO-gAOyDY4ujX2QrMFnw_WnKJxPbxgycBPt7wyPaMRQkKEJukQVLf7AoKYqyE6txoyVZPfiejVX737UeeT0T_gm9roUOkXiB5Uql63TeL74ik?width=700&height=700&cropmode=none" alt="Vice President">
-                        <div class="card-block">
-                            <h4 class="card-title">Dean Simonelli</h4>
+                            <h4 class="card-title">Chris McGinnis</h4>
                             <p class="card-text">Junior</p>
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
+                        <div class="card-header">
+                            Vice President
+                        </div>
+                        <img class="img-fluid" src="./images/dean.jpg" alt="Vice President">
+                        <div class="card-block">
+                            <h4 class="card-title">Dean Simonelli</h4>
+                            <p class="card-text">Senior</p>
+                        </div>
+                        </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Treasurer
                         </div>
-                        <img class="img-fluid" src="https://vetksg-bn1306.files.1drv.com/y3mOOt90BIL29Q7Q79OrZ0LiOwZgUHkMQMo6jAz9S58KE5lD2Hte2Rvq3KPzZ7ueB5ukzH8I6rtXLRTCw_ukWcK6B1LWSC-s8nD45_4-FG_xPQ7i345HIwgolKixzhyGK7L0FIF1CMRe5G1g1AJ8uLtSGNY_eN849SLjkx40zLR3rk?width=700&height=700&cropmode=none" alt="Treasurer">
+                        <img class="img-fluid" src="./images/tj.JPG" alt="Treasurer">
                         <div class="card-block">
-                            <h4 class="card-title">Brad Eick</h4>
+                            <h4 class="card-title">TJ Lynch</h4>
                             <p class="card-text">Senior</p>
                         </div>
                     </div>
@@ -147,38 +102,38 @@
 
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Men's Captain
                         </div>
-                        <img class="img-fluid" src="https://jamxyg-bn1306.files.1drv.com/y3mpgLfDj2okeOznKArRSLDIaYomInkj6y500dRXK-VTht2g1lBVyROIcESiut9Ztsszwc-EaDUDePSpHUrd1OMW9puSMx-OiCzOvtJFZ-ceeAb57kztVyScjFKtmS8tpcx_FrZpytTfxODHVMXt9qGuejUBSXlMBR5-JvF99JsSTw?width=700&height=700&cropmode=none" alt="Men's Captain'">
+                        <img class="img-fluid" src="./images/zack.jpg" alt="Men's Captain">
                         <div class="card-block">
-                            <h4 class="card-title">Alex Clark</h4>
+                            <h4 class="card-title">Zack Willig</h4>
                             <p class="card-text">Senior</p>
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Women's Captain
                         </div>
-                        <img class="img-fluid" src="https://v8a6jw-bn1306.files.1drv.com/y3mDm9baGXm0HqTiTgISqtEKfoCD_kYkA1X-7Tfry0xk75mcoRLj64XdvDgJAqP1TK0pv5-Hje2Fu-iWSPfabj20jAssGo2WYa_32wQuXjSmjRAxUJ9nKceG4pDGMtkWrj5lX4JHUsN_GUGMeEuja1dyuP1gfKvmXu7vpaNottIy28?width=700&height=700&cropmode=none" alt="Women's Captain'">
+                        <img class="img-fluid" src="./images/sara.JPG" alt="Women's Captain'">
                         <div class="card-block">
                             <h4 class="card-title">Sara Condra</h4>
-                            <p class="card-text">Junior</p>
+                            <p class="card-text">Senior</p>
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                                 Public Relations
                         </div>
-                        <img class="img-fluid" src="https://jakksq-bn1306.files.1drv.com/y3mmT73wIKmNF-ZxtBrAnmY9zGddsEUyWkSX4kqXBzWqEzA8hcpng9zZYh7nd8eJTCGYBN0t0opvNimQUnSCgMGa-BLVxExeySLeRSzn_sebdurSBudLWlJ9OFTdFe6XvDgkSeIPfw4hF9Imy2pQK3MNCC-JQW0O1aESBkZUzKBgpI?width=700&height=700&cropmode=none" alt="Public Relations">
+                        <img class="img-fluid" src="./images/kayla.JPG" alt="Public Relations">
                         <div class="card-block">
-                            <h4 class="card-title">Miranda Monroe</h4>
-                            <p class="card-text">Senior</p>
+                            <h4 class="card-title">Kayla Patnode</h4>
+                            <p class="card-text">Junior</p>
                         </div>
                     </div>
                 </div>   
@@ -186,38 +141,38 @@
 
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Secretary
                         </div>
-                        <img class="img-fluid" src="https://jalt6w-bn1306.files.1drv.com/y3meEy7N1ewNP3a7Jg7n1p3CgCSrxGr1z9ZrBZaqYbThF0XaSao1ga8Hk-zYJWHi8-Zacunfq_a5QyzgBPUflt4BGpm7lHokx10lqnfymgRWjOHbRz2kqFdbTNNiG_F0ZTP-nnvngsy6P4ElCsrXn1Jg1ALHEYybIA7JkSkI7xYpAo?width=700&height=700&cropmode=none" alt="Secretary">
+                        <img class="img-fluid" src="./images/anna.jpg" alt="Secretary">
                         <div class="card-block">
-                            <h4 class="card-title">Kayla Patnode</h4>
-                            <p class="card-text">Sophomore</p>
+                            <h4 class="card-title">Anna Geyer</h4>
+                            <p class="card-text">Junior</p>
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
-                            Fundraising
+                            Fundraising/Sponsorship
                         </div>
-                        <img class="img-fluid" src="https://vevj1q-bn1306.files.1drv.com/y3mfroFYXpv-sFAucS0JTiDEqX661CS0KuZytSt_KDsZGRWgFIozgG9LY7n1x24ETLqy2BdlvGF8qD6seVohMh1CqiFfvB2iKEeGBZBGnkEYn0Ib7IZ_VIKgin4zYmH-7o1CRDwlTPaWQj5eqgKv3GQ2kLyibE1HSBBGmKqkoNkRKw?width=700&height=700&cropmode=none" alt="Fundraising">
+                        <img class="img-fluid" src="./images/george.JPG" alt="Fundraising">
                         <div class="card-block">
-                            <h4 class="card-title">Chris McGinnis</h4>
-                            <p class="card-text">Sophomore</p>
+                            <h4 class="card-title">George Schober</h4>
+                            <p class="card-text">Junior</p>
                         </div>
                         </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Site Manager
                         </div>
-                        <img class="img-fluid" src="https://januxw-bn1306.files.1drv.com/y3mJntDCrJdUpZg61Om6ByD-FbSDbH-k_d6zbQHxx0ZJBpvX4-9IJF4rC2A1swAAJ2xjo_va_bpPv-Lw6VsJkOaoFY2o9Yb11_o_H2j5J7Dx3OdPObEJ5HvRuc-cvS9HTHVdtcoFTAaf4xf2JOj11QhnkcRSFKGxdz-nncCMnPFXBw?width=700&height=700&cropmode=none" alt="Site Manager">
+                        <img class="img-fluid" src="./images/jake.jpg" alt="Site Manager">
                         <div class="card-block">
-                            <h4 class="card-title">Nick Ostrander</h4>
-                            <p class="card-text">Senior</p>
+                            <h4 class="card-title">Jake Markusic</h4>
+                            <p class="card-text">Junior</p>
                         </div>
                         </div>
                 </div>
@@ -227,11 +182,11 @@
                 <div class="col-md-4 col-sm-12">
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card text-xs-center mb-2">
+                    <div class="card text-center mb-2">
                         <div class="card-header">
                             Team Advisor
                         </div>
-                        <img class="img-fluid" src="https://jaky1w-bn1306.files.1drv.com/y3mxqXPMGEYZCeXggBeUuZeJJAvZU6NOiGUTaktdTWJn-l5p_E3LlAaehGyKznGaUzQ_6sMdfjh2jJxBFruc_hP2pl9qMhuh4XdJcv_-yv--A6qhpgmh0HGfGeNJclzOh5BflOAJzUlmP5SiCWGA6wXXuouEDhZDezMrKYPiMJV9rQ?width=700&height=700&cropmode=none" alt="Time Advisor">
+                        <img class="img-fluid" src="./images/scott.PNG" alt="Time Advisor">
                         <div class="card-block">
                             <h4 class="card-title">Scott Thomas</h4>
                             <p class="card-text">The man, the myth, the legend</p>
@@ -242,7 +197,7 @@
                 </div>
             </div>
         </div>
-
-<script src="./main.js"></script>
+        <script src="./main0x03i5i.js"></script>
+        <script src="./nav0x8494.js"></script>
 </body>
 </html>
