@@ -1,7 +1,5 @@
 var time;
 function size() {
-
-    //window.location = "https://msu.edu/~waterski";
     
     if (window.innerWidth < 992) {
         document.getElementById('spartyhead1').style.display = 'none';
