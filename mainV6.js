@@ -1,9 +1,15 @@
 var time;
 window.addEventListener('load', function(){
-    var allimages= document.getElementsByTagName('img');
+    var allimages = document.getElementsByTagName('img');
+    var iframes = document.getElementsByTagName('iframe');
     for (var i=0; i<allimages.length; i++) {
         if (allimages[i].getAttribute('data-src')) {
             allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+        }
+    }
+    for (var i=0; i<iframes.length; i++) {
+        if (iframes[i].getAttribute('data-src')) {
+            iframes[i].setAttribute('src', iframes[i].getAttribute('data-src'));
         }
     }
 }, false)
