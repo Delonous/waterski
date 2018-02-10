@@ -169,7 +169,9 @@
 <script src="./mainV6.js"></script>
 <script src="./navV5.js"></script>
 <script>
-    $('#donationModal').modal('show');
+    $(window).on('load', function () {
+        $('#donationModal').modal('show');
+    }
 </script>
 
 </body>
