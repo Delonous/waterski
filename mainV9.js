@@ -42,8 +42,8 @@ function size() {
 
       setInterval(function() {
           var color = getRandomColor();
-          document.getElementById('donations').style.color = color;
-          document.getElementById('donations').style.textShadow = "0 0 20px" + color;          
+          document.getElementById('formal').style.color = color;
+          document.getElementById('formal').style.textShadow = "0 0 20px" + color;          
       }, 500);
  });
 
