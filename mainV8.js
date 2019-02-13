@@ -40,14 +40,14 @@ function size() {
       document.getElementById('loader').style.display = 'none';
       document.getElementById('content').style.display = 'block';
 
-      /*setInterval(function() {
+      setInterval(function() {
           var color = getRandomColor();
           document.getElementById('donations').style.color = color;
           document.getElementById('donations').style.textShadow = "0 0 20px" + color;          
-      }, 500);*/
+      }, 500);
  });
 
-/*
+
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -55,4 +55,4 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-}*/
+}
