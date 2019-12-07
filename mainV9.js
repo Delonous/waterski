@@ -39,8 +39,14 @@ function size() {
  $(window).on('load', function () {
       document.getElementById('loader').style.display = 'none';
       document.getElementById('content').style.display = 'block';
-
-      setInterval(function() {
+      
+      var count = 0
+      var formal = setInterval(function() {
+          count++
+          if (count > 10)
+          {
+              clearInterval(formal)
+          }
           var color = getRandomColor();
           document.getElementById('formal').style.color = color;
           document.getElementById('formal').style.textShadow = "0 0 20px" + color;          
